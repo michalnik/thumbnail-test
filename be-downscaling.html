@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BE Generated Thumbnails</title>
+  <style>
+    img { width: 50px; height: 50px; object-fit: cover; margin: 2px; }
+  </style>
+</head>
+<body>
+  <h1>BE 50x50 thumbnails</h1>
+  <div>
+    <!-- 100x 50px obrázků -->
+    <script>
+      for (let i = 1; i <= 100; i++) {
+        const img = document.createElement('img');
+        img.src = `thumbs/50/thumb${(i % 10) + 1}.jpg`;
+        document.body.appendChild(img);
+      }
+    </script>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,8 @@
+services:
+  thumbnails:
+    build: .
+    ports:
+      - "8000:8000"
+    # volumes:
+    #   - .:/app  # Optional: direct access to host directory
+
